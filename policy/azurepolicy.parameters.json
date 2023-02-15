@@ -1,0 +1,22 @@
+{
+    "listOfImageIdToInclude": {
+        "type": "Array",
+        "metadata": {
+            "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+            "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+        },
+        "defaultValue": []
+    },
+    "effect": {
+        "type": "String",
+        "metadata": {
+            "displayName": "Effect",
+            "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "DeployIfNotExists"
+    }
+}
