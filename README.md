@@ -4,7 +4,7 @@
 
 ----
 
-This is a template module. It just showcases how a module should look. This would be a short description of the module.
+This module contains the policy definition to deploy a policy that configures the dependency agent on windows machines with the inclusion of 2022 SKUs.
 
 <!-- BEGIN_TF_DOCS -->
 ## Usage
