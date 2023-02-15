@@ -18,6 +18,7 @@ provider "azurerm" {
 module "dependencyAgentWindowsPolicy" {
   source                      = "../../"
   management_group_id = "/providers/Microsoft.Management/managementGroups/myManagementGroup"
+  location = "westeurope"
 }
 ```
 
@@ -31,6 +32,7 @@ module "dependencyAgentWindowsPolicy" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_location"></a> [location](#input\_location) | Location for the policy assignment. | `string` | n/a | yes |
 | <a name="input_management_group_id"></a> [management\_group\_id](#input\_management\_group\_id) | Management group on which to define and assign the policy. | `string` | n/a | yes |
 ## Outputs
 
